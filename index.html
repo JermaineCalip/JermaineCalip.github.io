@@ -3,203 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jermaine Calip | e-Portfolio</title>
+    <title>Jermaine Jan Calip | Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section class="hero-modern d-flex align-items-center" id="hero">
-      <div class="container text-white">
-        <div class="row align-items-center">
-          <!-- Left: Text -->
-          <div class="col-md-7 text-start">
-            <h1 class="hero-title display-1 fw-bold">
-              FULL-STACK<br />
-              DEVELOPER &<br />
-              DATA ANALYST
-            </h1>
-            <p class="hero-subtitle">BASED IN AUCKLAND, NZ</p>
-            <ul class="hero-tags">
-              <li>/ Cloud & Big Data</li>
-              <li>/ Full-Stack Development</li>
-              <li>/ Innovation & Leadership</li>
+    <!-- HERO SECTION -->
+    <section class="hero-split">
+      <div class="hero-content">
+        <span class="subheadline">Software Engineer & Data Enthusiast</span>
+        <h1>
+          Hi, I'm Jermaine Jan Calip<br /><span class="highlight"
+            >Crafting Tech That Matters</span
+          >
+        </h1>
+        <p>
+          My mission is to design, develop, and deliver digital solutions that
+          make life easier for users and teams.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://wa.me/64274593351"
+            target="_blank"
+            class="btn-whatsapp"
+            >💬 Chat on WhatsApp</a
+          >
+          <a href="mailto:jermainejancalip27@gmail.com" class="btn-email"
+            >📧 Email Me</a
+          >
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/your-image.jpg" alt="Jermaine Jan Calip" />
+        <div class="circle-tag">Developer • Data Analyst • Innovator</div>
+      </div>
+    </section>
+
+    <!-- BIOGRAPHY -->
+    <section class="section bg-dark text-white">
+      <div class="container">
+        <h2>I. Bibliography</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4>Introduction</h4>
+            <p>
+              Hello there, I’m Jermaine Jan Calip—aka Jay. I’m an IT enthusiast
+              driven by solving real-world problems using technology. I’ve
+              studied in the Philippines and New Zealand and have experience in
+              full-stack development, cloud services, and analytics.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>Self-Evaluation</h4>
+            <p>
+              I’m technically sound, adaptive, and a team player. I specialize
+              in Python, JavaScript, MongoDB, and modern web frameworks. I’m
+              developing leadership skills and aiming for technical excellence
+              and innovation.
+            </p>
+            <h5>Contact</h5>
+            <ul class="list-unstyled">
+              <li>📍 Massey, Auckland, NZ</li>
+              <li>📞 0274593351</li>
+              <li>📧 jermainejancalip27@gmail.com</li>
             </ul>
           </div>
-          <!-- Right: Image -->
-          <div class="col-md-5 text-center mt-4 mt-md-0">
-            <img
-              src="assets/profile.jpg"
-              alt="Jermaine Calip"
-              class="hero-image img-fluid rounded-circle"
-            />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT WORK -->
+    <section class="section bg-black text-white">
+      <div class="container">
+        <h2>II. Project Work</h2>
+        <div class="row g-4 mt-4">
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img
+                src="assets/images/project1.jpg"
+                class="card-img-top"
+                alt="Full Stack Project"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Full-Stack Time Tracker</h5>
+                <p>
+                  Built a time-tracking app in Python + React. Boosted
+                  productivity and accountability at Giant Software.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img
+                src="assets/images/project2.jpg"
+                class="card-img-top"
+                alt="AI Grading System"
+              />
+              <div class="card-body">
+                <h5 class="card-title">AI Content Grader</h5>
+                <p>
+                  Capstone project that grades content for under-15 audiences
+                  using LLMs, Flask, and NLP.
+                </p>
+                <a
+                  href="https://github.com/CeciLincon/Age-grading-System.git"
+                  class="btn btn-outline-light btn-sm mt-2"
+                  >View GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img
+                src="assets/images/project3.jpg"
+                class="card-img-top"
+                alt="Hackathon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">GenAI Hackathon</h5>
+                <p>
+                  Worked with AWS & Promptech to design sustainable AI
+                  solutions. Learned design thinking + cloud deployment.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <!-- GOALS -->
+    <section class="section bg-dark text-white">
       <div class="container">
-        <a class="navbar-brand" href="#hero">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#bibliography">Biography</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Project Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#development"
-                >Professional Development</a
-              >
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reflection">Reflective Learning</a>
-            </li>
-          </ul>
+        <h2>III. Professional Development</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4>Personal Goals</h4>
+            <ul>
+              <li>Improve leadership & strategic thinking</li>
+              <li>Enhance communication and emotional intelligence</li>
+              <li>Master cloud tools like AWS, Kafka, and Spark</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Professional Goals</h4>
+            <ul>
+              <li>Land a full-time role in NZ in dev/data</li>
+              <li>Build my network through meetups and collaboration</li>
+              <li>Move into technical leadership within 5 years</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!-- Bibliography -->
-    <section class="container py-5" id="bibliography">
-      <h2>I. Bibliography</h2>
-      <h4>Introduction</h4>
-      <p>
-        Hello, my name is Jermaine Jan Calip (Jay). I am an IT enthusiast
-        passionate about solving real-world problems with technology. I hold
-        degrees from the Philippines and New Zealand and am currently pursuing
-        my Master of Business Informatics at ICL Graduate Business School.
-      </p>
-
-      <h4>Self-Evaluation</h4>
-      <p>
-        Using the Whetten & Cameron model, I evaluate myself as adaptive, a team
-        player, and technically strong in full-stack development, data
-        analytics, and cloud computing.
-      </p>
-
-      <h4>LinkedIn Profile</h4>
-      <a href="https://www.linkedin.com/in/JermaineCalip/" target="_blank"
-        >linkedin.com/in/JermaineCalip</a
-      >
-
-      <h4>Contact Information</h4>
-      <ul>
-        <li><strong>Location:</strong> Massey, Auckland, NZ</li>
-        <li><strong>Phone:</strong> 0274593351</li>
-        <li><strong>Email:</strong> jermainejancalip27@gmail.com</li>
-      </ul>
-    </section>
-
-    <!-- Project Work -->
-    <section class="bg-light py-5" id="projects">
-      <div class="container">
-        <h2>II. Project Work</h2>
-        <ul>
-          <li>
-            <strong>Time-Tracking Web App:</strong> Developed in React & Python
-            to optimize team productivity at Giant Software Station.
-          </li>
-          <li>
-            <strong>AI Content Grading App:</strong> Flask-based AI tool for
-            analyzing appropriateness of online content.
-            <a href="https://github.com/CeciLincon/Age-grading-System.git"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <strong>GenAI Hackathon:</strong> Built an AWS-backed prototype
-            addressing sustainability challenges using generative AI tools.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Professional Development -->
-    <section class="container py-5" id="development">
-      <h2>III. Professional Development</h2>
-      <h4>Personal Learning Goals</h4>
-      <ul>
-        <li>Improve leadership and decision-making in digital teams</li>
-        <li>Enhance communication and collaboration skills</li>
-        <li>Deepen cloud and big data expertise (AWS/GCP)</li>
-      </ul>
-      <h4>Professional Learning Goals</h4>
-      <ul>
-        <li>Secure a developer or data analyst job in NZ within 12 months</li>
-        <li>Build and maintain a strong digital professional network</li>
-        <li>Become a systems architect or technical leader in 5–7 years</li>
-      </ul>
     </section>
 
     <!-- CV -->
-    <section class="bg-light py-5" id="cv">
-      <div class="container text-center">
-        <h2>My Curriculum Vitae</h2>
-        <p>Click below to view my latest CV:</p>
-        <a href="assets/JermaineCV.pdf" target="_blank" class="btn btn-primary"
-          >View My CV</a
+    <section class="section text-center bg-black text-white">
+      <div class="container">
+        <h2>My CV</h2>
+        <p>Click below to view or download my Curriculum Vitae.</p>
+        <a
+          href="assets/docs/cv.pdf"
+          class="btn btn-warning mt-2"
+          target="_blank"
+          >📄 View CV</a
         >
       </div>
     </section>
 
-    <!-- Reflective Learning -->
-    <section class="container py-5" id="reflection">
-      <h2>IV. Reflective Learning</h2>
-      <h4>Reflective Post</h4>
-      <p>
-        I’ve developed a systems thinking mindset, a deep appreciation for
-        cybersecurity, and a customer-focused innovation approach across my
-        coursework including Business Professionalism, InfoSec, Innovation, and
-        Project Management.
-      </p>
+    <!-- REFLECTIVE LEARNING -->
+    <section class="section bg-dark text-white">
+      <div class="container">
+        <h2>IV. Reflective Learning</h2>
+        <h4>Reflective Post</h4>
+        <p>
+          Business Professionalism taught me systems thinking—understanding how
+          people, technology, and processes work together. I now approach
+          solutions holistically, not just technically.
+        </p>
 
-      <h4>One Peer Evaluation</h4>
-      <div class="card mt-4 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fas fa-user-circle"></i> Dylan</h5>
-          <p class="card-text\">
-            “Jay has a strong sense of responsibility and commitment to quality
-            work.”
-          </p>
-          <hr />
-          <h5 class="card-title">
-            <i class="fas fa-user-circle"></i> Zophie Ann
-          </h5>
-          <p class="card-text\">
-            “Jermaine was a reliable partner with creativity and tech-savvy
-            inputs.”
-          </p>
-          <hr />
-          <h5 class="card-title"><i class="fas fa-user-circle"></i> Mave</h5>
-          <p class="card-text\">
-            “Always punctual, collaborative and a motivating team presence.”
-          </p>
+        <h4 class="mt-5">One Peer Evaluation</h4>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div
+              class="review bg-black p-3 border-start border-warning border-4"
+            >
+              <strong>Dylan ⭐⭐⭐⭐⭐</strong>
+              <p>"Responsible and goal-driven. Always delivers."</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="review bg-black p-3 border-start border-warning border-4"
+            >
+              <strong>Zophie Ann ⭐⭐⭐⭐⭐</strong>
+              <p>"Creative, tech-savvy, and a great teammate."</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="review bg-black p-3 border-start border-warning border-4"
+            >
+              <strong>Mave ⭐⭐⭐⭐⭐</strong>
+              <p>"Punctual and reliable. A true leader in the group."</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 Jermaine Calip. All rights reserved.</p>
+    <!-- FOOTER -->
+    <footer class="footer bg-black text-center text-white p-3">
+      <p>&copy; 2025 Jermaine Jan Calip | All Rights Reserved</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
