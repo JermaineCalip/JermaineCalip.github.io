@@ -1,0 +1,116 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333; /* Darker text for readability */
+}
+
+.header-bg {
+    /* Gradient background for hero section */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #667eea; /* Accent color for underline */
+    border-radius: 2px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Remove default Bootstrap card border */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: #667eea; /* Primary button color */
+    border-color: #667eea;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5a67d8; /* Darker shade on hover */
+    border-color: #5a67d8;
+}
+
+.nav-link.hover-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link.hover-link:hover {
+    color: #667eea !important; /* Ensure hover color applies */
+}
+
+.post-card {
+    border-left: 4px solid #667eea; /* Left border for reflective posts */
+}
+
+/* Custom colors for specific elements */
+.text-secondary {
+    color: #4a5568 !important; /* Darker gray for headings */
+}
+
+.text-muted {
+    color: #718096 !important; /* Slightly lighter gray for subtext */
+}
+
+.border-purple {
+    border-color: #764ba2 !important; /* Custom border color for peer evaluation */
+}
+
+/* Form input styling */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25); /* Bootstrap-like focus ring */
+    outline: none;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
