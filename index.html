@@ -1,444 +1,196 @@
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jermaine Calip - E-Portfolio</title>
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link to Google Fonts for Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Link to your custom stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="antialiased">
-
-    <!-- Navigation Header -->
-    <header class="bg-white p-3 shadow-sm sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white container">
-            <a class="navbar-brand fs-4 fw-bold text-dark" href="#home">Jermaine Calip</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary hover-link" href="#biographical">Biographical</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary hover-link" href="#project-work">Project Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary hover-link" href="#professional-development">Professional Development</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary hover-link" href="#reflective-learning">Reflective Learning</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jermaine Calip | e-Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Hero Section -->
-    <section id="home" class="header-bg text-white py-5 text-center rounded-bottom-4">
-        <div class="container px-4">
-            <img src="https://placehold.co/150x150/667eea/ffffff?text=JC" alt="Jermaine Calip Profile" class="rounded-circle mx-auto mb-4 border border-white border-4 shadow-lg" style="width: 150px; height: 150px;">
-            <h1 class="display-3 fw-bold mb-3">Jermaine Calip</h1>
-            <p class="lead mb-4">IT Enthusiast | Full-Stack Developer | Data Analyst</p>
-            <a href="#biographical" class="btn btn-primary btn-lg fw-semibold">Learn More About Me</a>
-        </div>
+    <section
+      class="hero text-white text-center d-flex align-items-center"
+      id="hero"
+    >
+      <div class="container">
+        <img
+          src="assets/profile.jpg"
+          alt="Jermaine Calip"
+          class="rounded-circle mb-4"
+        />
+        <h1 class="display-4 fw-bold">Jermaine Jan Calip</h1>
+        <p class="lead">
+          Full-Stack Developer | Data Analyst | Future Tech Leader
+        </p>
+      </div>
     </section>
 
-    <main class="container px-4 py-5">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#bibliography">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#development"
+                >Professional Development</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reflection">Reflective Learning</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <!-- Biographical Section -->
-        <section id="biographical" class="mb-5">
-            <h2 class="display-4 fw-bold text-dark mb-4 section-title">Biographical</h2>
+    <!-- Bibliography -->
+    <section class="container py-5" id="bibliography">
+      <h2>I. Bibliography</h2>
+      <h4>Introduction</h4>
+      <p>
+        Hello, my name is Jermaine Jan Calip (Jay). I am an IT enthusiast
+        passionate about solving real-world problems with technology. I hold
+        degrees from the Philippines and New Zealand and am currently pursuing
+        my Master of Business Informatics at ICL Graduate Business School.
+      </p>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Introduction</h3>
-                        <p class="mb-3">
-                            Hello! I'm Jermaine Calip, a motivated and adaptable IT graduate currently pursuing a Master of Business Informatics at ICL Graduate Business School, Auckland, NZ. My journey in technology has equipped me with hands-on experience in full-stack development and a solid background in data analysis. I thrive on building web applications, collaborating on technical projects, and applying analytical thinking to solve complex problems effectively.
-                        </p>
-                        <p class="mb-0">
-                            My career aspiration is to contribute meaningfully to a growth-focused organization, leveraging my skills in software development, data analysis, and cloud platforms. I am eager to build a substantial career in the tech industry, continually learning and adapting to new challenges, and ultimately aiming for roles that allow me to drive innovation and efficiency through technology. My current pursuit of the Master of Business Informatics qualification is a strategic step towards achieving these goals, deepening my understanding of how technology can be aligned with business objectives.
-                        </p>
-                    </div>
-                </div>
+      <h4>Self-Evaluation</h4>
+      <p>
+        Using the Whetten & Cameron model, I evaluate myself as adaptive, a team
+        player, and technically strong in full-stack development, data
+        analytics, and cloud computing.
+      </p>
 
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Self-Evaluation</h3>
-                        <p class="mb-3">
-                            Drawing from the principles of effective management and personal development, I've conducted a self-evaluation of my strengths and areas for development.
-                        </p>
-                        <h4 class="fs-4 fw-semibold mb-2 text-muted">Strengths:</h4>
-                        <ul class="list-unstyled mb-3 text-dark">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Problem-Solving:</strong> I possess a strong ability to analyze complex issues, break them down into manageable parts, and devise effective solutions. This was evident in my project work, such as developing a time-tracking web application where I debugged software issues to enhance system reliability.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Adaptability:</strong> I quickly learn new technologies and adapt to changing environments, as demonstrated by my experience in various roles and my continuous pursuit of new qualifications (e.g., Graduate Diploma in Data Analytics).</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Teamwork & Collaboration:</strong> My experience in hackathons and team projects highlights my ability to collaborate effectively, integrate feedback, and contribute positively to group objectives.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Strong Work Ethic:</strong> I am recognized for my dedication and commitment to tasks, taking ownership and proactively seeking ways to improve efficiency.</li>
-                        </ul>
-                        <h4 class="fs-4 fw-semibold mb-2 text-muted">Areas for Development:</h4>
-                        <ul class="list-unstyled text-dark">
-                            <li><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i><strong>Advanced Data Modeling:</strong> While proficient in data analysis and visualization tools, I aim to deepen my expertise in advanced data modeling techniques to handle more complex datasets and derive richer insights.</li>
-                            <li><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i><strong>Strategic Communication:</strong> I want to further refine my ability to articulate technical concepts to non-technical stakeholders, ensuring clearer communication and alignment on project goals.</li>
-                            <li><i class="bi bi-arrow-right-circle-fill text-warning me-2"></i><strong>Leadership in Cross-Functional Teams:</strong> While I excel in teamwork, I seek opportunities to take on more formal leadership roles within cross-functional teams, guiding projects from conception to completion.</li>
-                        </ul>
-                    </div>
-                </div>
+      <h4>LinkedIn Profile</h4>
+      <a href="https://www.linkedin.com/in/JermaineCalip/" target="_blank"
+        >linkedin.com/in/JermaineCalip</a
+      >
 
-                <div class="col-12">
-                    <div class="card p-4">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Contact & Links</h3>
-                        <div class="d-flex flex-wrap justify-content-around gap-4">
-                            <div class="text-center">
-                                <h4 class="fs-4 fw-semibold mb-2 text-muted">LinkedIn Profile</h4>
-                                <a href="https://linkedin.com/in/JermaineCalip" target="_blank" class="btn btn-primary">Visit My LinkedIn</a>
-                                <p class="text-muted mt-2">Connect with me for professional networking.</p>
-                            </div>
-                            <div class="text-center">
-                                <h4 class="fs-4 fw-semibold mb-2 text-muted">Email Me</h4>
-                                <p class="fs-5 text-dark">jermainejancalip27@gmail.com</p>
-                                <p class="text-muted mt-2">Feel free to reach out for inquiries or collaborations.</p>
-                            </div>
-                            <div class="text-center">
-                                <h4 class="fs-4 fw-semibold mb-2 text-muted">Phone</h4>
-                                <p class="fs-5 text-dark">+64 274593351</p>
-                                <p class="text-muted mt-2">Available for direct contact.</p>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <h4 class="fs-2 fw-semibold mb-3 text-secondary">Contact Form</h4>
-                            <form id="contactForm" class="contact-form row g-3">
-                                <div class="col-md-6">
-                                    <label for="name" class="form-label">Name:</label>
-                                    <input type="text" id="name" name="name" required class="form-control">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">Email:</label>
-                                    <input type="email" id="email" name="email" required class="form-control">
-                                </div>
-                                <div class="col-12">
-                                    <label for="subject" class="form-label">Subject:</label>
-                                    <input type="text" id="subject" name="subject" required class="form-control">
-                                </div>
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Message:</label>
-                                    <textarea id="message" name="message" rows="5" required class="form-control"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Send Message</button>
-                                </div>
-                                <p id="formMessage" class="mt-3 text-center"></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <h4>Contact Information</h4>
+      <ul>
+        <li><strong>Location:</strong> Massey, Auckland, NZ</li>
+        <li><strong>Phone:</strong> 0274593351</li>
+        <li><strong>Email:</strong> jermainejancalip27@gmail.com</li>
+      </ul>
+    </section>
 
-        <!-- Project Work Section -->
-        <section id="project-work" class="mb-5">
-            <h2 class="display-4 fw-bold text-dark mb-4 section-title">Project Work</h2>
+    <!-- Project Work -->
+    <section class="bg-light py-5" id="projects">
+      <div class="container">
+        <h2>II. Project Work</h2>
+        <ul>
+          <li>
+            <strong>Time-Tracking Web App:</strong> Developed in React & Python
+            to optimize team productivity at Giant Software Station.
+          </li>
+          <li>
+            <strong>AI Content Grading App:</strong> Flask-based AI tool for
+            analyzing appropriateness of online content.
+            <a href="https://github.com/CeciLincon/Age-grading-System.git"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <strong>GenAI Hackathon:</strong> Built an AWS-backed prototype
+            addressing sustainability challenges using generative AI tools.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Web-Based Information Management System for Lingkod Maria Community Development and Advocacy Center</h3>
-                        <p class="mb-3 text-dark">
-                            <strong>Project Task/Challenge:</strong> The Lingkod Maria Community Development and Advocacy Center needed a robust and accessible system to manage their community data, including beneficiary information, program details, and outreach activities. The existing manual processes were inefficient, prone to errors, and made data retrieval and reporting challenging. The primary challenge was to centralize this information and make it easily manageable for their staff.
-                        </p>
-                        <p class="mb-3 text-dark">
-                            <strong>Goals/Objectives:</strong> The main goals were to develop a web-based system that would:
-                            <ul class="list-unstyled ms-4">
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Streamline data entry and retrieval for community members and programs.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Improve reporting capabilities for internal analysis and external stakeholders.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Enhance data security and integrity.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Provide an intuitive user interface for non-technical staff.</li>
-                            </ul>
-                        </p>
-                        <p class="mb-3 text-dark">
-                            <strong>My Involvement:</strong> As a key member of the development team, I was primarily responsible for the back-end development, including database design (MySQL) and API development using a PHP-based framework. I also contributed to the front-end integration, ensuring seamless interaction between the user interface and the database. My role involved translating functional requirements into technical specifications and implementing robust solutions.
-                        </p>
-                        <p class="mb-3 text-dark">
-                            <strong>Approach:</strong> We adopted an Agile development methodology, with iterative sprints to deliver features incrementally. My approach involved:
-                            <ul class="list-unstyled ms-4">
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Requirement Analysis:</strong> Collaborating closely with the center's staff to understand their needs and workflows.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Database Design:</strong> Creating a normalized and efficient database schema to store various types of information.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>API Development:</strong> Building secure and efficient APIs for data manipulation and retrieval.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Testing:</strong> Conducting thorough unit and integration testing to ensure data accuracy and system reliability.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>User Training:</strong> Assisting in training the center's staff on how to effectively use the new system.</li>
-                            </ul>
-                        </p>
-                        <p class="mb-0 text-dark">
-                            <strong>Outcomes:</strong> The developed system significantly improved the center's operational efficiency. Data management became centralized and accessible, reducing manual errors and saving considerable time. Reporting capabilities were enhanced, allowing the center to generate insights into their programs more effectively and demonstrate their impact to donors and partners. The intuitive interface led to quick adoption by staff, and the overall system provided a solid foundation for future expansions.
-                        </p>
-                    </div>
-                </div>
+    <!-- Professional Development -->
+    <section class="container py-5" id="development">
+      <h2>III. Professional Development</h2>
+      <h4>Personal Learning Goals</h4>
+      <ul>
+        <li>Improve leadership and decision-making in digital teams</li>
+        <li>Enhance communication and collaboration skills</li>
+        <li>Deepen cloud and big data expertise (AWS/GCP)</li>
+      </ul>
+      <h4>Professional Learning Goals</h4>
+      <ul>
+        <li>Secure a developer or data analyst job in NZ within 12 months</li>
+        <li>Build and maintain a strong digital professional network</li>
+        <li>Become a systems architect or technical leader in 5–7 years</li>
+      </ul>
+    </section>
 
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Developed a Standardized Grading System for Text Content using Large Language Models</h3>
-                        <p class="mb-3 text-dark">
-                            <strong>Project Task/Challenge:</strong> The challenge was to create an automated and consistent method for grading large volumes of text content, such as essays or reports, which traditionally relied on subjective manual assessment. The goal was to leverage Large Language Models (LLMs) to provide a standardized, objective, and efficient grading system that could handle nuances in text and provide constructive feedback.
-                        </p>
-                        <p class="mb-3 text-dark">
-                            <strong>Goals/Objectives:</strong> The primary objectives were to:
-                            <ul class="list-unstyled ms-4">
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Automate the grading process for text content.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Ensure consistency and objectivity in grading, reducing human bias.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Provide detailed feedback based on predefined rubrics.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i>Improve efficiency in evaluating large datasets of text.</li>
-                            </ul>
-                        </p>
-                        <p class="mb-3 text-dark">
-                            <strong>My Involvement:</strong> My role in this project was multifaceted, involving research, model selection, prompt engineering, and system integration. I was responsible for exploring various LLMs, designing the grading rubrics in a machine-readable format, and crafting effective prompts to guide the LLM in its evaluation. I also worked on integrating the LLM's output into a user-friendly interface for reviewing grades and feedback.
-                        </p>
-                        <p class="mb-3 text-dark">
-                            <strong>Approach:</strong> The project followed a research and development approach:
-                            <ul class="list-unstyled ms-4">
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>LLM Selection:</strong> Researching and selecting the most suitable LLM based on its capabilities in natural language understanding and generation.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Rubric Definition:</strong> Collaborating with subject matter experts to define clear, measurable grading rubrics.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Prompt Engineering:</strong> Iteratively refining prompts to ensure the LLM understood the grading criteria and provided accurate assessments.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Feedback Generation:</strong> Designing the system to extract specific feedback points from the LLM's analysis.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill text-info me-2"></i><strong>Evaluation & Refinement:</strong> Comparing LLM-generated grades with human grades to fine-tune the system and improve accuracy.</li>
-                            </ul>
-                        </p>
-                        <p class="mb-0 text-dark">
-                            <strong>Outcomes:</strong> The standardized grading system successfully demonstrated the potential of LLMs in automating content evaluation. It significantly reduced the time and effort required for grading, while also improving consistency across assessments. The system was able to provide detailed, rubric-based feedback, which proved valuable for content creators looking to improve their writing. This project highlighted my ability to apply cutting-edge AI technologies to solve real-world problems and optimize workflows.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- CV -->
+    <section class="bg-light py-5" id="cv">
+      <div class="container text-center">
+        <h2>My Curriculum Vitae</h2>
+        <p>Click below to view my latest CV:</p>
+        <a href="assets/JermaineCV.pdf" target="_blank" class="btn btn-primary"
+          >View My CV</a
+        >
+      </div>
+    </section>
 
-        <!-- Professional Development Section -->
-        <section id="professional-development" class="mb-5">
-            <h2 class="display-4 fw-bold text-dark mb-4 section-title">Professional Development</h2>
+    <!-- Reflective Learning -->
+    <section class="container py-5" id="reflection">
+      <h2>IV. Reflective Learning</h2>
+      <h4>Reflective Post</h4>
+      <p>
+        I’ve developed a systems thinking mindset, a deep appreciation for
+        cybersecurity, and a customer-focused innovation approach across my
+        coursework including Business Professionalism, InfoSec, Innovation, and
+        Project Management.
+      </p>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Personal & Professional Learning Goals (PPLG)</h3>
-                        <p class="mb-3 text-dark">
-                            My Personal and Professional Learning Goals are designed to guide my growth in the tech industry, focusing on both skill development and career progression.
-                        </p>
-                        <h4 class="fs-4 fw-semibold mb-2 text-muted">Personal Learning Goals:</h4>
-                        <ul class="list-unstyled mb-3 text-dark">
-                            <li><i class="bi bi-lightbulb-fill text-primary me-2"></i><strong>Enhance Leadership & Mentorship Skills:</strong> Develop the ability to effectively lead small teams and mentor junior developers. This includes improving delegation, conflict resolution, and motivational techniques.
-                                <ul class="list-unstyled ms-4 text-muted small">
-                                    <li>Strategy: Seek opportunities to lead group projects, volunteer for team lead roles, and participate in leadership workshops.</li>
-                                </ul>
-                            </li>
-                            <li><i class="bi bi-lightbulb-fill text-primary me-2"></i><strong>Deepen Cloud Architecture Expertise:</strong> Gain advanced knowledge in designing scalable, secure, and cost-effective cloud solutions, particularly within AWS and GCP ecosystems.
-                                <ul class="list-unstyled ms-4 text-muted small">
-                                    <li>Strategy: Pursue AWS Certified Solutions Architect - Associate certification and complete advanced courses on cloud-native application development.</li>
-                                </ul>
-                            </li>
-                            <li><i class="bi bi-lightbulb-fill text-primary me-2"></i><strong>Improve Public Speaking & Presentation Skills:</strong> Become more confident and articulate in presenting technical concepts to diverse audiences, from technical teams to business stakeholders.
-                                <ul class="list-unstyled ms-4 text-muted small">
-                                    <li>Strategy: Actively participate in class presentations, join Toastmasters International, and present at local tech meetups.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <h4 class="fs-4 fw-semibold mb-2 text-muted">Professional Learning Goals:</h4>
-                        <ul class="list-unstyled text-dark">
-                            <li><i class="bi bi-briefcase-fill text-success me-2"></i><strong>Secure a Mid-Level Software Developer/Data Engineer Role:</strong> Within the next 1-2 years, transition into a role that allows me to apply my full-stack development and data analysis skills in a more complex, impactful environment.
-                                <ul class="list-unstyled ms-4 text-muted small">
-                                    <li>Strategy: Network extensively, tailor my resume and portfolio to target roles, and actively apply for positions that align with my skills and aspirations.</li>
-                                </ul>
-                            </li>
-                            <li><i class="bi bi-briefcase-fill text-success me-2"></i><strong>Contribute to Open Source Projects:</strong> Actively contribute to at least one significant open-source project to gain exposure to diverse codebases, collaboration practices, and community-driven development.
-                                <ul class="list-unstyled ms-4 text-muted small">
-                                    <li>Strategy: Identify projects aligned with my technical interests (Python, JavaScript, data engineering) and start by contributing small fixes or documentation.</li>
-                                </ul>
-                            </li>
-                            <li><i class="bi bi-briefcase-fill text-success me-2"></i><strong>Expand Professional Network in New Zealand Tech Industry:</strong> Build strong connections with industry leaders, mentors, and peers within the New Zealand tech landscape.
-                                <ul class="list-unstyled ms-4 text-muted small">
-                                    <li>Strategy: Attend industry conferences, workshops, and meetups; engage actively on LinkedIn; and seek informational interviews.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card p-4 h-100">
-                        <h3 class="fs-2 fw-semibold mb-3 text-secondary">Curriculum Vitae (CV)</h3>
-                        <p class="mb-3 text-dark">
-                            Below is a summary of my professional experience and skills. For a comprehensive view, you can download my full CV in PDF format.
-                        </p>
-                        <div class="mb-4">
-                            <h4 class="fs-4 fw-semibold mb-2 text-muted">Summary</h4>
-                            <p class="text-dark">
-                                A motivated and adaptable IT graduate with hands-on experience in full-stack development and a background in data analysis. Experienced in building web applications, collaborating on technical projects, and applying analytical thinking to solve problems effectively. Recognized for a strong work ethic, eagerness to learn, and a positive, team-oriented attitude. Eager to contribute to a growth-focused organization and build a meaningful career in the tech industry.
-                            </p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="fs-4 fw-semibold mb-2 text-muted">Technical Skills</h4>
-                            <ul class="list-unstyled row g-2 text-dark">
-                                <li class="col-sm-6"><i class="bi bi-code-slash text-primary me-2"></i><strong>Programming Languages:</strong> Python, Java, JavaScript</li>
-                                <li class="col-sm-6"><i class="bi bi-file-earmark-code text-primary me-2"></i><strong>Coding Languages:</strong> HTML, CSS</li>
-                                <li class="col-sm-6"><i class="bi bi-globe text-primary me-2"></i><strong>Web Development:</strong> Laravel, Flask, Bootstrap</li>
-                                <li class="col-sm-6"><i class="bi bi-palette-fill text-primary me-2"></i><strong>Layout Tools:</strong> Adobe XD, Figma, Canva</li>
-                                <li class="col-sm-6"><i class="bi bi-database-fill text-primary me-2"></i><strong>Databases Integration:</strong> MySQL, MongoDB</li>
-                                <li class="col-sm-6"><i class="bi bi-bar-chart-fill text-primary me-2"></i><strong>Data Analysis & Visualization:</strong> Tableau, Power BI</li>
-                                <li class="col-sm-6"><i class="bi bi-server text-primary me-2"></i><strong>Big Data Technologies:</strong> Hadoop, Apache Spark/Kafka</li>
-                                <li class="col-sm-6"><i class="bi bi-kanban-fill text-primary me-2"></i><strong>Team & Project Management Tools:</strong> Trello, TeamGantt, Atlassian (Confluence)</li>
-                                <li class="col-sm-6"><i class="bi bi-file-earmark-spreadsheet-fill text-primary me-2"></i><strong>MS Office Suite:</strong> Proficient in Word, Excel, PowerPoint</li>
-                                <li class="col-sm-6"><i class="bi bi-cloud-fill text-primary me-2"></i><strong>Cloud Platforms:</strong> AWS, GCP</li>
-                            </ul>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="fs-4 fw-semibold mb-2 text-muted">Soft Skills</h4>
-                            <ul class="list-unstyled row g-2 text-dark">
-                                <li class="col-sm-6"><i class="bi bi-chat-dots-fill text-success me-2"></i>Strong Communication</li>
-                                <li class="col-sm-6"><i class="bi bi-lightbulb-fill text-success me-2"></i>Critical Thinking</li>
-                                <li class="col-sm-6"><i class="bi bi-puzzle-fill text-success me-2"></i>Problem-Solving</li>
-                                <li class="col-sm-6"><i class="bi bi-people-fill text-success me-2"></i>Teamwork</li>
-                                <li class="col-sm-6"><i class="bi bi-shuffle text-success me-2"></i>Adaptability</li>
-                                <li class="col-sm-6"><i class="bi bi-hammer text-success me-2"></i>Strong Work Ethic</li>
-                                <li class="col-sm-6"><i class="bi bi-emoji-smile-fill text-success me-2"></i>Positive Attitude</li>
-                                <li class="col-sm-6"><i class="bi bi-check-circle-fill text-success me-2"></i>Decision-Making Skills</li>
-                            </ul>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="fs-4 fw-semibold mb-2 text-muted">Education</h4>
-                            <ul class="list-unstyled text-dark">
-                                <li class="mb-1"><i class="bi bi-mortarboard-fill text-info me-2"></i><strong>Master of Business Informatics</strong> (2025 - Present) - Level 9, ICL Graduate Business School, Auckland, NZ</li>
-                                <li class="mb-1"><i class="bi bi-mortarboard-fill text-info me-2"></i><strong>Graduate Diploma in Data Analytics</strong> (2024-2025) - Level 7, NZSE Colleges, Auckland, NZ</li>
-                                <li class="mb-1"><i class="bi bi-mortarboard-fill text-info me-2"></i><strong>Bachelor of Science in Information Technology</strong> (2019-2023) - Saint Mary's University, Bayombong, PH</li>
-                            </ul>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="fs-4 fw-semibold mb-2 text-muted">Experience</h4>
-                            <ul class="list-unstyled text-dark">
-                                <li class="mb-3">
-                                    <i class="bi bi-briefcase-fill text-warning me-2"></i><strong>GenAI Hackathon: Sustainable Impact</strong> (2024) - Organized by Promptech, AWS and Unitec, Unitec, Auckland NZ
-                                    <p class="small text-muted ms-4">Collaborated in a team environment to develop AI-powered solutions addressing real-world sustainability challenges. Gained experience in utilizing AWS tools and technologies under the guidance of AWS Solutions Architecture experts. Engaged with industry professionals and mentors to enhance skills in AI model deployment, cloud computing and sustainable tech innovation.</p>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-briefcase-fill text-warning me-2"></i><strong>Back-End Developer</strong> (2022-2023) - Giant International Software Station, Inc., Baguio City, Philippines
-                                    <p class="small text-muted ms-4">Developed a time tracking web application for GISSI employees to optimize time management and reporting. Collaborated with a team to ensure timely project delivery, integrating user feedback into the development cycle. Utilized back-end development expertise to debug software issues, enhancing system reliability and performance.</p>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-briefcase-fill text-warning me-2"></i><strong>Networking Team Member</strong> - Saint Mary's University, Bayombong, Philippines
-                                    <p class="small text-muted ms-4">Assisted in the setup and maintenance of the network infrastructure for accreditation purposes. Collaborated with team members to troubleshoot network issues and implement solutions promptly. Assisted in configuring routers, switches and firewalls to optimize network efficiency and reliability.</p>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="bi bi-briefcase-fill text-warning me-2"></i><strong>Print Finisher</strong> (April to Present, 2025) - Torque Digital, Henderson, Auckland NZ
-                                    <p class="small text-muted ms-4">Assembled and packaged cardboard product stands with precision using gluing and folding techniques. Delivered consistent quality by focusing on detail, accuracy and teamwork in a fast-paced environment. Took ownership of tasks and proactively learned new skills to improve efficiency and support the team.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-4 text-center">
-                        <!-- In a real scenario, replace with a link to the actual PDF CV hosted on GitHub -->
-                        <a href="CV - Jermaine Jan Calip.pdf" download="Jermaine_Calip_CV.pdf" class="btn btn-primary">Download Full CV (PDF)</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reflective Learning Section -->
-        <section id="reflective-learning" class="mb-5">
-            <h2 class="display-4 fw-bold text-dark mb-4 section-title">Reflective Learning</h2>
-
-            <div class="row g-4">
-                <!-- Reflective Post 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 post-card h-100">
-                        <h3 class="fs-3 fw-semibold mb-3 text-secondary">Post 1: Agile Methodologies in Practice</h3>
-                        <p class="text-muted small mb-3">Date: June 28, 2025</p>
-                        <p class="text-dark lh-base">
-                            During the "Project Management for IT" course at ICL, I gained a profound understanding of Agile methodologies, particularly Scrum. The theoretical concepts, such as daily stand-ups, sprint planning, and retrospectives, truly clicked when we applied them to a simulated project. I learned the importance of iterative development, continuous feedback, and adaptability in rapidly changing project environments. This learning was incredibly useful in my academic work, as it provided a structured approach to managing group assignments, ensuring efficient task distribution and timely delivery. In my future professional life, especially in software development, I plan to advocate for and actively participate in Agile frameworks. I've already started applying this by breaking down personal projects into smaller, manageable sprints, which has significantly improved my productivity and ability to track progress. This approach allows for quick adjustments and ensures that the final product aligns closely with evolving requirements, a critical skill in today's dynamic tech landscape.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Reflective Post 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 post-card h-100">
-                        <h3 class="fs-3 fw-semibold mb-3 text-secondary">Post 2: Data Visualization for Impactful Storytelling</h3>
-                        <p class="text-muted small mb-3">Date: June 20, 2025</p>
-                        <p class="text-dark lh-base">
-                            The "Data Analytics and Visualization" course at NZSE Colleges was instrumental in teaching me how to transform raw data into compelling visual narratives. I learned not just how to use tools like Tableau and Power BI, but more importantly, the principles of effective data storytelling – understanding the audience, choosing the right chart type, and highlighting key insights. This skill has been immensely useful in my academic presentations, allowing me to convey complex analytical findings clearly and persuasively. Professionally, this learning is invaluable. In my previous experience as a Back-End Developer, presenting data-driven insights was often challenging. Now, I can create dashboards and reports that are not only accurate but also easily digestible for stakeholders, facilitating better decision-making. I've already applied this by creating a personal dashboard to track my learning progress and project milestones, making my self-assessment more visual and actionable.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Reflective Post 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 post-card h-100">
-                        <h3 class="fs-3 fw-semibold mb-3 text-secondary">Post 3: The Power of Cloud Computing (AWS/GCP)</h3>
-                        <p class="text-muted small mb-3">Date: June 15, 2025</p>
-                        <p class="text-dark lh-base">
-                            My participation in the GenAI Hackathon, organized by Promptech, AWS, and Unitec, provided hands-on experience with cloud platforms, specifically AWS. I learned about various AWS services like EC2, S3, and Lambda, and how they integrate to build scalable and resilient applications. The specific learning was understanding the "serverless" paradigm and its implications for cost-efficiency and operational overhead. This knowledge is crucial for my professional development, as cloud literacy is a fundamental requirement in modern IT roles. It has already been useful in understanding the architecture of enterprise-level applications and considering deployment strategies. I plan to apply this learning by actively seeking projects that involve cloud deployment and aiming for AWS certifications. This experience has solidified my interest in cloud computing and its potential to revolutionize how software is developed and delivered.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Reflective Post 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 post-card h-100">
-                        <h3 class="fs-3 fw-semibold mb-3 text-secondary">Post 4: Debugging and System Reliability</h3>
-                        <p class="text-muted small mb-3">Date: June 10, 2025</p>
-                        <p class="text-dark lh-base">
-                            During my time as a Back-End Developer at Giant International Software Station, Inc., I significantly honed my debugging skills. It wasn't just about finding errors, but understanding the root cause, tracing data flow, and implementing robust solutions to prevent recurrence. This involved deep dives into code logic, database interactions, and API responses. This learning has been incredibly useful in all my coding endeavors, from academic projects to personal scripts. It has taught me patience, meticulousness, and a systematic approach to problem-solving. In my current and future roles, this skill is paramount for ensuring system reliability and performance. I apply this learning daily by adopting defensive programming practices, writing comprehensive unit tests, and utilizing debugging tools effectively. This focus on reliability ensures that the software I build is not only functional but also stable and maintainable, contributing directly to user satisfaction and business continuity.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Reflective Post 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 post-card h-100">
-                        <h3 class="fs-3 fw-semibold mb-3 text-secondary">Post 5: Effective Communication in Technical Teams</h3>
-                        <p class="text-muted small mb-3">Date: June 5, 2025</p>
-                        <p class="text-dark lh-base">
-                            Collaborating on various projects, including the "Web-Based Information Management System" and the "GenAI Hackathon," reinforced the critical importance of effective communication within technical teams. I learned that clear, concise, and timely communication is essential for avoiding misunderstandings, resolving conflicts, and ensuring everyone is aligned on project goals. This includes active listening, articulating technical challenges in an understandable way, and providing constructive feedback. This learning has been invaluable in my academic group projects, where smooth communication directly impacts team cohesion and project success. Professionally, it translates into more efficient workflows, reduced rework, and stronger team dynamics. I actively apply this by using project management tools like Trello and Confluence for transparent updates, participating actively in discussions, and ensuring my contributions are always clear and actionable. This continuous effort to improve communication fosters a more productive and harmonious working environment.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Peer Evaluation Post -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card p-4 post-card border-start border-4 border-purple h-100">
-                        <h3 class="fs-3 fw-semibold mb-3 text-secondary">Peer Evaluation: Feedback on Teamwork and Presentation</h3>
-                        <p class="text-muted small mb-3">Date: May 28, 2025</p>
-                        <p class="text-dark lh-base">
-                            During a recent group presentation in the "Business Informatics" course, I received valuable feedback from my peers regarding my contribution to teamwork and my presentation style. One peer highlighted my strong analytical skills in breaking down complex problems during our project planning phase, noting that I often helped the team clarify objectives. However, another peer suggested that while my technical explanations were thorough, I could improve on simplifying jargon for a broader audience during presentations.
-                            <br><br>
-                            This feedback has significantly influenced my learning and development. The positive reinforcement on my analytical skills encourages me to continue leveraging this strength in future collaborations. The constructive criticism on simplifying technical jargon was particularly insightful. I realized that my focus on accuracy sometimes overshadowed clarity for non-technical listeners.
-                            <br><br>
-                            As a result, I've made conscious changes. For subsequent presentations, I've started practicing explaining complex concepts using analogies and simpler language, and I've incorporated more visual aids to support my points. I also plan to rehearse my presentations with a non-technical friend or peer to get their perspective on clarity. This feedback has pushed me to not only be technically proficient but also to be a more effective communicator, ensuring my ideas resonate with diverse audiences, which is crucial for any IT professional.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+      <h4>One Peer Evaluation</h4>
+      <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-user-circle"></i> Dylan</h5>
+          <p class="card-text\">
+            “Jay has a strong sense of responsibility and commitment to quality
+            work.”
+          </p>
+          <hr />
+          <h5 class="card-title">
+            <i class="fas fa-user-circle"></i> Zophie Ann
+          </h5>
+          <p class="card-text\">
+            “Jermaine was a reliable partner with creativity and tech-savvy
+            inputs.”
+          </p>
+          <hr />
+          <h5 class="card-title"><i class="fas fa-user-circle"></i> Mave</h5>
+          <p class="card-text\">
+            “Always punctual, collaborative and a motivating team presence.”
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 text-center rounded-top-4">
-        <div class="container px-4">
-            <p>&copy; 2025 Jermaine Calip. All rights reserved.</p>
-            <div class="d-flex justify-content-center space-x-4 mt-3">
-                <a href="https://linkedin.com/in/JermaineCalip" target="_blank" class="text-light-emphasis text-decoration-none hover-link">LinkedIn</a>
-                <span class="mx-2">|</span>
-                <a href="mailto:jermainejancalip27@gmail.com" class="text-light-emphasis text-decoration-none hover-link">Email</a>
-                <!-- Add more social links if desired -->
-            </div>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Jermaine Calip. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Link to your custom JavaScript file -->
-    <script src="script.js"></script>
-    <!-- Bootstrap Icons CDN (optional, but used for some icons) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</body>
+  </body>
 </html>
