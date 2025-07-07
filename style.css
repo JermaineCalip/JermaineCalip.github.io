@@ -1,78 +1,45 @@
-/* ======================
-   Global Styling
-====================== */
+/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #333;
+  background-color: #f4f6f9;
   color: #333;
   line-height: 1.6;
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
 }
 
-/* ======================
-   Hero Section
-====================== */
-.hero-modern {
-  background-color: #0a0a0a;
-  color: #fff;
-  padding: 100px 0;
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('assets/hero-bg.jpg') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 60px 0;
 }
 
-.hero-title {
-  font-size: 3.8rem;
-  line-height: 1.1;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+.hero img {
+  border: 4px solid #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
-.hero-subtitle {
-  font-size: 1rem;
-  margin-top: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #bbbbbb;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.hero-tags {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 30px;
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
-.hero-tags li {
-  font-size: 1rem;
-  color: #cccccc;
-  margin-bottom: 8px;
-  font-weight: 300;
-}
-
-.hero-image {
-  max-width: 250px;
-  border: 6px solid #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.hero-image:hover {
-  transform: scale(1.05);
-}
-
-/* ======================
-   Navbar
-====================== */
+/* Navbar */
 .navbar {
   background-color: #111 !important;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  color: #fff !important;
 }
 
 .navbar-nav .nav-link {
@@ -85,13 +52,7 @@ body {
   color: #ffc107 !important;
 }
 
-/* ======================
-   Section Headings
-====================== */
-section {
-  padding: 60px 0;
-}
-
+/* Headings */
 h2 {
   border-left: 6px solid #0d6efd;
   padding-left: 12px;
@@ -105,38 +66,19 @@ h4 {
   font-weight: 500;
 }
 
-/* ======================
-   Buttons
-====================== */
+/* Buttons */
 .btn-primary {
   background-color: #0d6efd;
   border-color: #0d6efd;
   border-radius: 50px;
   padding: 10px 25px;
-  font-weight: 500;
-  transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-}
-
-/* ======================
-   CV Section
-====================== */
-#cv .btn {
-  margin-top: 20px;
-}
-
-/* ======================
-   Card Styles (Peer Review)
-====================== */
+/* Card Styles */
 .card-body {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  padding: 20px;
 }
 
 .card-title {
@@ -144,47 +86,23 @@ h4 {
   font-weight: 600;
 }
 
-.card-text {
-  color: #555;
-}
-
-/* ======================
-   Footer
-====================== */
+/* Footer */
 footer {
   background-color: #111;
   color: #fff;
-  padding: 20px 0;
-  font-size: 0.9rem;
 }
 
-/* ======================
-   Responsive Adjustments
-====================== */
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.2rem;
+  .hero h1 {
+    font-size: 2rem;
   }
 
-  .hero-subtitle {
-    font-size: 0.85rem;
-  }
-
-  .hero-tags li {
-    font-size: 0.9rem;
-  }
-
-  .hero-image {
-    max-width: 180px;
-    margin-top: 30px;
+  .hero p {
+    font-size: 1rem;
   }
 
   .navbar-nav .nav-link {
     margin-left: 0;
-    text-align: center;
-  }
-
-  section {
-    padding: 40px 0;
   }
 }
