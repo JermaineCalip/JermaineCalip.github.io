@@ -53,6 +53,8 @@ body {
   text-decoration: none;
 }
 
+/* CTA buttons are styled in HTML using Bootstrap classes */
+
 .hero-img-wrapper {
   position: relative;
   display: inline-block;
@@ -73,6 +75,9 @@ body {
   font-size: 0.9rem;
   letter-spacing: 1px;
   white-space: nowrap;
+  padding: 8px 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* ======================
