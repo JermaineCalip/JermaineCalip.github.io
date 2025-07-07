@@ -5,97 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jermaine Jan Calip | Portfolio</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <!-- HERO SECTION SPLIT STYLE -->
+    <!-- HERO SECTION -->
     <section class="hero-split d-flex align-items-center" id="hero">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Left: Content -->
+          <!-- Text Content -->
           <div class="col-md-6">
             <div class="hero-content text-white">
               <span class="subheadline d-block mb-2"
-                >dasdasdadr & Data Analyst</span
+                >“Driven by curiosity, led by purpose.”</span
               >
               <h1 class="display-4 fw-bold">
-                Hi, I'm Jermaine Jan Calip (Jay)<br />
-                <span class="highlight">Crafting Tech That Matters</span>
+                Kia Ora! I'm <span class="highlight">Jermaine Jan Calip</span
+                ><br />
+                <span id="typed-role"></span>
               </h1>
               <p class="mt-3">
-                My mission is to design, develop, and deliver digital solutions
-                that make life easier for users and teams.
+                Designing and building impactful digital solutions.
               </p>
               <div class="cta-buttons mt-4">
                 <a
                   href="https://wa.me/64274593351"
                   target="_blank"
                   class="btn btn-success me-2"
+                  >💬 WhatsApp</a
                 >
-                  💬 Chat on WhatsApp
-                </a>
                 <a
-                  href="mailto:jermainejancalip27@gmail.com"
-                  class="btn btn-outline-light"
+                  href="jermainejancalip27@gmail.com"
+                  class="btn btn-outline-light me-2"
+                  >📧 Email Me</a
                 >
-                  📧 Email Me
-                </a>
+                <a
+                  href="https://www.linkedin.com/in/JermaineCalip/"
+                  target="_blank"
+                  class="btn btn-outline-light me-2"
+                  >💼 LinkedIn</a
+                >
+                <a
+                  href="github.com/JermaineCalip"
+                  target="_blank"
+                  class="btn btn-outline-light"
+                  >💻 GitHub</a
+                >
+                <a
+                  href="assets/images/docs/CV - Jermaine Jan Calip.pdf"
+                  class="btn btn-warning mt-2"
+                  target="_blank"
+                  >📄 View CV</a
+                >
               </div>
             </div>
           </div>
-          <!-- Right: Image + Tag -->
-          <div class="col-md-6 text-center mt-4 mt-md-0">
-            <div class="hero-img-wrapper position-relative">
+
+          <!-- Slideshow -->
+          <div class="col-md-6 text-center mt-4 mt-md-0 position-relative">
+            <div class="hero-slideshow">
               <img
-                src="assets/images/hero_image 2.png"
-                alt="Jermaine Jan Calip"
+                class="slide active"
+                src="assets/images/hero_image 1.png"
+                alt="Slide 1"
               />
-              <div
-                class="circle-tag position-absolute top-100 start-50 translate-middle mt-3 text-white bg-dark px-4 py-2 rounded-pill"
-              >
-                Developer • Data Analyst • Innovator
-              </div>
+              <img
+                class="slide"
+                src="assets/images/hero_image 2.png"
+                alt="Slide 2"
+              />
+              <img
+                class="slide"
+                src="assets/images/hero_image 3.png"
+                alt="Slide 3"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <div class="divider-gradient"></div>
+
     <!-- BIOGRAPHY -->
-    <section class="section bg-dark text-white">
+    <section class="section bg-black text-white" id="biography">
       <div class="container">
-        <h2>I. Bibliography</h2>
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <h4>Introduction</h4>
-            <p>
-              Hello there, I’m Jermaine Jan Calip—aka Jay. I’m an IT enthusiast
-              driven by solving real-world problems using technology. I’ve
-              studied in the Philippines and New Zealand and have experience in
-              full-stack development, cloud services, and analytics.
-            </p>
+        <h2 class="section-title text-center text-warning mb-5">
+          I. Bibliography
+        </h2>
+        <div class="row">
+          <!-- Personal Intro -->
+          <div class="col-md-6 mb-4">
+            <div class="p-4 bg-dark rounded shadow-sm h-100">
+              <h4 class="text-warning">👤 Personal Introduction</h4>
+              <p>
+                Hello there, my name is Jermaine Jan Calip, but people call me
+                Jay. I am an IT enthusiast who is really into technology for
+                solving real-world problems. I have studied in both the
+                Philippines and New Zealand and hold a Bachelor's degree in IT,
+                a Graduate Diploma in Data Analytics, and am currently pursuing
+                a Master of Business Informatics at ICL Graduate Business School
+                in Auckland. I've worked in roles such as back-end developer at
+                Giant Software and IT support at Saint Mary's University, and
+                currently work as a print finisher at Torque Digital. I'm
+                passionate about collaborative environments and continuously
+                seek growth in the digital economy.
+              </p>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h4>Self-Evaluation</h4>
-            <p>
-              I’m technically sound, adaptive, and a team player. I specialize
-              in Python, JavaScript, MongoDB, and modern web frameworks. I’m
-              developing leadership skills and aiming for technical excellence
-              and innovation.
-            </p>
-            <h5>Contact</h5>
-            <ul class="list-unstyled">
-              <li>📍 Massey, Auckland, NZ</li>
-              <li>📞 0274593351</li>
-              <li>📧 jermainejancalip27@gmail.com</li>
-            </ul>
+
+          <!-- Self Evaluation -->
+          <div class="col-md-6 mb-4">
+            <div class="p-4 bg-dark rounded shadow-sm h-100">
+              <h4 class="text-warning">🧠 Self-Evaluation</h4>
+              <p>
+                Based on Whetten and Cameron’s self-assessment theory, I am
+                adaptive, team-oriented, and technically skilled. I am
+                proficient in Python, Java, JavaScript, and web frameworks like
+                Flask and Laravel. My database experience includes MySQL,
+                MongoDB, Hadoop, and Spark. I take pride in my organizational,
+                problem-solving, and communication skills. However, I aim to
+                improve in strategic leadership and project management, which I
+                plan to address through mentorship, real-world experience, and
+                mastering tools like AWS and Atlassian.
+              </p>
+              <h5 class="text-light mt-3">📫 Contact</h5>
+              <ul class="list-unstyled">
+                <li>📍 Massey, Auckland, NZ</li>
+                <li>📞 0274593351</li>
+                <li>📧 jermainejancalip27@gmail.com</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -104,13 +152,22 @@
     <!-- PROJECT WORK -->
     <section class="section bg-black text-white">
       <div class="container">
-        <h2>II. Project Work</h2>
-        <div class="row g-4 mt-4">
+        <h2 class="section-title mb-4">Project Work</h2>
+        <div class="row g-4">
+          <!-- Project 1 -->
           <div class="col-md-4">
-            <div class="card project-card h-100">
+            <div
+              class="card project-card h-100 shadow-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#project1Modal"
+              style="cursor: pointer"
+              tabindex="0"
+              role="button"
+              aria-label="Open Full-Stack Time Tracker project details"
+            >
               <img
-                src="assets/images/project1.jpg"
-                class="card-img-top"
+                src="assets/images/project_image 1.JPEG"
+                class="card-img-top rounded-top"
                 alt="Full Stack Project"
               />
               <div class="card-body">
@@ -119,14 +176,31 @@
                   Built a time-tracking app in Python + React. Boosted
                   productivity and accountability at Giant Software.
                 </p>
+                <button
+                  class="btn btn-primary btn-sm mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project1Modal"
+                >
+                  More Details
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- Project 2 -->
           <div class="col-md-4">
-            <div class="card project-card h-100">
+            <div
+              class="card project-card h-100 shadow-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#project2Modal"
+              style="cursor: pointer"
+              tabindex="0"
+              role="button"
+              aria-label="Open AI Content Grader project details"
+            >
               <img
-                src="assets/images/project2.jpg"
-                class="card-img-top"
+                src="assets/images/project_image 2.png"
+                class="card-img-top rounded-top"
                 alt="AI Grading System"
               />
               <div class="card-body">
@@ -135,19 +209,31 @@
                   Capstone project that grades content for under-15 audiences
                   using LLMs, Flask, and NLP.
                 </p>
-                <a
-                  href="https://github.com/CeciLincon/Age-grading-System.git"
-                  class="btn btn-outline-light btn-sm mt-2"
-                  >View GitHub</a
+                <button
+                  class="btn btn-primary btn-sm mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project2Modal"
                 >
+                  More Details
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- Project 3 -->
           <div class="col-md-4">
-            <div class="card project-card h-100">
+            <div
+              class="card project-card h-100 shadow-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#project3Modal"
+              style="cursor: pointer"
+              tabindex="0"
+              role="button"
+              aria-label="Open GenAI Hackathon project details"
+            >
               <img
-                src="assets/images/project3.jpg"
-                class="card-img-top"
+                src="assets/images/project_image 3.jpeg"
+                class="card-img-top rounded-top"
                 alt="Hackathon"
               />
               <div class="card-body">
@@ -156,49 +242,274 @@
                   Worked with AWS & Promptech to design sustainable AI
                   solutions. Learned design thinking + cloud deployment.
                 </p>
+                <button
+                  class="btn btn-primary btn-sm mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#project3Modal"
+                >
+                  More Details
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- GOALS -->
-    <section class="section bg-dark text-white">
-      <div class="container">
-        <h2>III. Professional Development</h2>
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <h4>Personal Goals</h4>
-            <ul>
-              <li>Improve leadership & strategic thinking</li>
-              <li>Enhance communication and emotional intelligence</li>
-              <li>Master cloud tools like AWS, Kafka, and Spark</li>
-            </ul>
+    <!-- Project 1 Modal -->
+    <div
+      class="modal fade"
+      id="project1Modal"
+      tabindex="-1"
+      aria-labelledby="project1ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div
+          class="modal-content bg-dark text-white rounded-4 shadow-lg border-0"
+        >
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold" id="project1ModalLabel">
+              Full-Stack Time Tracker
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="col-md-6">
-            <h4>Professional Goals</h4>
-            <ul>
-              <li>Land a full-time role in NZ in dev/data</li>
-              <li>Build my network through meetups and collaboration</li>
-              <li>Move into technical leadership within 5 years</li>
-            </ul>
+          <div class="modal-body">
+            <img
+              src="assets/images/project_image 1.JPEG"
+              alt="Full Stack Project"
+              class="img-fluid rounded mb-4"
+            />
+            <p class="lead">
+              Built a time-tracking app in Python + React. Boosted productivity
+              and accountability at Giant Software.
+            </p>
+            <p>
+              This project focused on creating a seamless user experience for
+              tracking work hours, managing tasks, and reporting. The backend
+              was built with Flask and integrated with React on the frontend.
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-outline-light rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- CV -->
-    <section class="section text-center bg-black text-white">
-      <div class="container">
-        <h2>My CV</h2>
-        <p>Click below to view or download my Curriculum Vitae.</p>
-        <a
-          href="assets/docs/cv.pdf"
-          class="btn btn-warning mt-2"
-          target="_blank"
-          >📄 View CV</a
+    <!-- Project 2 Modal -->
+    <div
+      class="modal fade"
+      id="project2Modal"
+      tabindex="-1"
+      aria-labelledby="project2ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div
+          class="modal-content bg-dark text-white rounded-4 shadow-lg border-0"
         >
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold" id="project2ModalLabel">
+              AI Content Grader
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="assets/images/project_image 2.png"
+              alt="AI Grading System"
+              class="img-fluid rounded mb-4"
+            />
+            <p class="lead">
+              Capstone project that grades content for under-15 audiences using
+              LLMs, Flask, and NLP.
+            </p>
+            <p>
+              This system uses large language models to assess the
+              appropriateness of digital content for young audiences by
+              evaluating complexity, content maturity, and vocabulary.
+            </p>
+            <a
+              href="https://github.com/CeciLincon/Age-grading-System.git"
+              target="_blank"
+              class="btn btn-success rounded-pill px-4"
+            >
+              View GitHub
+            </a>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-outline-light rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div
+      class="modal fade"
+      id="project3Modal"
+      tabindex="-1"
+      aria-labelledby="project3ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div
+          class="modal-content bg-dark text-white rounded-4 shadow-lg border-0"
+        >
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold" id="project3ModalLabel">
+              GenAI Hackathon
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="assets/images/project_image 3.jpeg"
+              alt="Hackathon"
+              class="img-fluid rounded mb-4"
+            />
+            <p class="lead">
+              Worked with AWS & Promptech to design sustainable AI solutions.
+              Learned design thinking + cloud deployment.
+            </p>
+            <p>
+              This hackathon experience helped me develop skills in AI
+              integration and cloud architecture design while focusing on
+              sustainability.
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-outline-light rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL DEVELOPMENT -->
+    <section class="section bg-black text-white" id="professional-development">
+      <div class="container">
+        <h2 class="section-title mb-4">Professional Development</h2>
+        <div class="row">
+          <!-- Personal Learning Goals -->
+          <div class="col-md-6 mb-4">
+            <div class="p-4 bg-dark rounded shadow-sm h-100">
+              <h4 class="text-warning">🎯 Personal Learning Goals</h4>
+              <p>
+                <strong>1. Leadership & Decision-Making:</strong><br />
+                To be able to improve my leadership and decision-making
+                abilities in IT project teams. I aim to become a confident
+                leader in coordinating systems development and deployment.
+              </p>
+              <ul>
+                <li>Join leadership workshops at ICL</li>
+                <li>Volunteer to lead academic projects</li>
+                <li>Attend tech webinars</li>
+                <li>Keep a leadership reflection journal</li>
+              </ul>
+
+              <p>
+                <strong>2. Communication & Emotional Intelligence:</strong
+                ><br />
+                To improve communication, teamwork, and empathy—key soft skills
+                that complement my technical expertise.
+              </p>
+              <ul>
+                <li>Seek peer/lecturer feedback</li>
+                <li>Join communication workshops</li>
+                <li>Practice active listening in teams</li>
+                <li>Build emotional regulation through mindfulness</li>
+              </ul>
+
+              <p>
+                <strong>3. Big Data & Cloud Technologies:</strong><br />
+                To enhance my skills in scalable solutions using AWS, GCP,
+                Spark, and Kafka.
+              </p>
+              <ul>
+                <li>Earn certifications (AWS, GCP)</li>
+                <li>Build academic & personal cloud projects</li>
+                <li>Practice with labs on Coursera/Qwiklabs</li>
+                <li>Join tech communities using these tools</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Professional Learning Goals -->
+          <div class="col-md-6 mb-4">
+            <div class="p-4 bg-dark rounded shadow-sm h-100">
+              <h4 class="text-warning">💼 Professional Learning Goals</h4>
+              <p>
+                <strong>1. Get a Full-Time Role in NZ (6–12 months):</strong
+                ><br />
+                I aim to secure a role as a full-stack dev or data analyst and
+                apply my skills in real-world business settings.
+              </p>
+              <ul>
+                <li>Apply to entry-level roles & internships</li>
+                <li>Tailor CV & cover letter for jobs</li>
+                <li>Update GitHub & LinkedIn regularly</li>
+                <li>Attend career fairs & networking events</li>
+              </ul>
+
+              <p>
+                <strong>2. Build a Strong Network (2 years):</strong><br />
+                Networking is vital to thrive in NZ’s tech space. I plan to
+                establish meaningful professional connections.
+              </p>
+              <ul>
+                <li>Join meetups, events, tech forums</li>
+                <li>Connect with peers & mentors on LinkedIn</li>
+                <li>Engage in webinars & tech content creation</li>
+                <li>Seek mentorship from industry professionals</li>
+              </ul>
+
+              <p>
+                <strong>3. Advance to Leadership (5–7 years):</strong><br />
+                I envision myself as a tech lead or architect influencing
+                innovation and guiding future professionals.
+              </p>
+              <ul>
+                <li>Progress from developer to senior roles</li>
+                <li>Take up training in software architecture</li>
+                <li>Lead and design on complex projects</li>
+                <li>Stay updated through certifications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -212,7 +523,6 @@
           people, technology, and processes work together. I now approach
           solutions holistically, not just technically.
         </p>
-
         <h4 class="mt-5">One Peer Evaluation</h4>
         <div class="row g-3">
           <div class="col-md-4">
@@ -248,6 +558,28 @@
       <p>&copy; 2025 Jermaine Jan Calip | All Rights Reserved</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const typed = new Typed("#typed-role", {
+        strings: ["Full Stack Developer", "Data Analyst", "Tech Enthusiast"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 2000,
+        loop: true,
+      });
+    </script>
+
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlides() {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].classList.add("active");
+        setTimeout(showSlides, 4000);
+      }
+
+      showSlides();
+    </script>
   </body>
 </html>
