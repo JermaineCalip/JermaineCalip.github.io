@@ -1,4 +1,11 @@
 /* Base Styling */
+bg-section-1 { background-color: #0f0f0f; }  /* dark base */
+.bg-section-2 { background-color: #1a1a1a; }  /* slightly lighter */
+.bg-section-3 { background-color: #121212; }  /* middle tone */
+.bg-section-4 { background-color: #191919; }  /* for reflective learning */
+.bg-section-5 { background-color: #202020; }  /* optional for next section */
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #0f0f0f;
@@ -11,12 +18,6 @@ body {
 h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
-
-.bg-section-1 { background-color: #0f0f0f; }  /* dark base */
-.bg-section-2 { background-color: #1a1a1a; }  /* slightly lighter */
-.bg-section-3 { background-color: #121212; }  /* middle tone */
-.bg-section-4 { background-color: #191919; }  /* for reflective learning */
-.bg-section-5 { background-color: #202020; }  /* optional for next section */
 
 .section {
   padding: 80px 0;
@@ -137,6 +138,7 @@ h1, h2, h3, h4, h5 {
 
 .project-card .card-body {
   padding: 1rem;
+  /* text-align: justify; */
 }
 
 /* Review Cards */
@@ -178,6 +180,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Project Section */
+.card-title {
+  color: #fca311;
+}
 .section-title {
   font-weight: 800;
   letter-spacing: 0.05em;
@@ -219,6 +224,22 @@ h1, h2, h3, h4, h5 {
   background: #121212;
   color: #eee;
   border-radius: 1rem !important;
+}
+
+.lead {
+  font-weight: 800;
+  color:  #fca311aa;
+}
+
+.modal-title{
+  color: #fca311
+}
+
+.modal-body img{
+ width: 800px;        
+  height: 300px;
+  object-fit: cover;   
+  border-radius: 8px;
 }
 
 /* Modal header */
@@ -293,7 +314,6 @@ ul li {
 }
 
 /* Reflective Learning */
-/* Reflective Learning Layout */
 #reflective-learning .post-layout {
   display: flex;
   flex-wrap: wrap;
@@ -309,6 +329,10 @@ ul li {
 #reflective-learning .post-img {
   flex: 1 1 40%;
   min-width: 300px;
+}
+
+.title-PD{
+  color:  #fca311aa
 }
 
 #reflective-learning .post-img img {
