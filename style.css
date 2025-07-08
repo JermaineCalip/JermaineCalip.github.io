@@ -13,6 +13,11 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -314,12 +319,15 @@ ul li {
 }
 
 /* Reflective Learning */
+ /* Reflective Learning Section */
+
 #reflective-learning .post-layout {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 60px;
   gap: 40px;
+  transition: all 0.3s ease;
 }
 
 #reflective-learning .post-layout.alt {
@@ -329,10 +337,7 @@ ul li {
 #reflective-learning .post-img {
   flex: 1 1 40%;
   min-width: 300px;
-}
-
-.title-PD{
-  color:  #fca311aa
+  transition: all 0.3s ease;
 }
 
 #reflective-learning .post-img img {
@@ -340,12 +345,13 @@ ul li {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(252, 163, 17, 0.3);
-  border: 2px solid #fca311;
-  transition: transform 0.3s ease;
+  /* border: 2px solid #fca311; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#reflective-learning .post-img img:hover {
-  transform: scale(1.03);
+#reflective-learning .post-layout.expanded .post-img img {
+  box-shadow: 0 0 25px #fca311cc;
+  transform: scale(1.05);
 }
 
 #reflective-learning .post-text {
@@ -363,6 +369,113 @@ ul li {
   color: #ccc;
   line-height: 1.8;
   margin-bottom: 1rem;
+}
+
+/* Collapsible text: initially show only first 2 paragraphs */
+
+.collapsible-text p {
+  display: block;
+}
+
+.collapsible-text.collapsed p:nth-child(n+3) {
+  display: none;
+}
+
+/* Read More button style */
+
+.read-more-btn {
+  display: inline-block;
+  color: #fca311;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 8px;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #ffb347;
+}
+
+/* Peer Evaluation Layout */
+.peer-eval-row {
+  display: flex;
+  gap: 2rem;               /* space between paragraph and carousel */
+  align-items: center;     /* vertical center alignment */
+  flex-wrap: wrap;         /* wrap on smaller screens */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Paragraph container */
+.peer-eval-text {
+  flex: 1 1 40%;           /* flexible width with minimum 40% */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #eee;
+  min-width: 280px;        /* prevent too narrow */
+}
+
+/* Carousel container */
+.peer-eval-carousel {
+  flex: 1 1 50%;           /* flexible width with minimum 50% */
+  max-width: 600px;
+}
+
+/* Carousel inner height consistency */
+.peer-eval-carousel .carousel-inner {
+  min-height: 320px;
+}
+
+/* === Your original carousel styles === */
+.carousel-inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel-item.active {
+  display: flex !important;
+}
+
+.review-card {
+  width: 90%;
+  max-width: 500px;
+  background-color: #000;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+
+  /* Glowing orange outline */
+  /* border: 2px solid #fca311; */
+  /* box-shadow: 0 0 10px #fca311; */
+}
+
+.review-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fca311;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #ffc107;
+}
+
+@media (max-width: 576px) {
+  .review-card p {
+    font-size: 0.9rem;
+  }
 }
 
 /* Responsive */
