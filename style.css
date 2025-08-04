@@ -472,6 +472,10 @@ ul li {
   color: #ffc107;
 }
 
+.list-unstyled {
+  margin-top: 20px;
+}
+
 @media (max-width: 576px) {
   .review-card p {
     font-size: 0.9rem;
